@@ -1,0 +1,106 @@
+body {
+  font-family: sans-serif;
+  background-color: #619ff0;
+  background-image: linear-gradient(to bottom, #315481, #918e82 100%);
+  background-attachment: fixed;
+ 
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+ 
+  padding: 0;
+  margin: 0;
+ 
+  font-size: 14px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  min-height: 100%;
+  background: whitesmoke;
+}
+header {
+  background: #000708;
+  background-image: linear-gradient(to bottom, #d0edf5, #e1e5f0 100%);
+  padding: 20px 15px 15px 15px;
+  position: relative;
+}
+h1 {
+  font-size: 1.5em;
+  margin: 0;
+  margin-bottom: 10px;
+  display: inline-block;
+  margin-right: 1em;
+}
+
+fieldset {
+  width: 310px;
+  margin-top: 20px;
+  border: 1px solid #080000;
+  background-color: #ffffff;
+  line-height: 1.6em;}
+legend {
+  font-style:italic;
+  color:#666666;}
+input[type="text"] {
+  width: 120px;
+  border: 1px solid #d6d6d6;
+  padding: 2px;
+  outline: none;}
+input[type="text"]:focus,
+input[type="text"]:hover {
+  background-color: #d0e2f0;
+  border: 1px solid #999;}
+input[type="submit"] {
+  border: 1px solid #006633;
+  background-color: #009966;
+  color: #FFFFFF;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 10px;}
+input[type="submit"]:hover {
+  border: 1px solid #160230;
+  background-color: rgb(113, 15, 179);
+				 color: #FFFFFF;
+				 cursor: pointer;}
+			 .title {
+				 float: center;
+				 width: 160px;
+				 clear: center;}
+			 .submit {
+				 width: 310px;
+         text-align: left;
+        }
+        table {
+          border-spacing: 0px;
+          width: 90%
+        }
+        th, td {
+          padding: 5px 30px 5px 10px;
+          border-spacing: 0px;
+          font-size: 90%;
+          margin: 0px;}
+        th, td {
+          text-align: left;
+          background-color: #e0e9f0;
+          border-top: 1px solid #f1f8fe;
+          border-bottom: 1px solid #cbd2d8;
+          border-right: 1px solid #cbd2d8;}
+        tr.head th {
+          color: #fff;
+          background-color: #90b4d6;
+          border-bottom: 2px solid #547ca0;
+          border-right: 1px solid #749abe;
+          border-top: 1px solid #90b4d6;
+          text-align: center;
+          text-shadow: -1px -1px 1px #666;
+          letter-spacing: 0.15em;}
+        td {
+          text-shadow: 1px 1px 1px #fff;
+        }
+
+         
+          

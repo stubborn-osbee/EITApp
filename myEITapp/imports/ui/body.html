@@ -1,0 +1,56 @@
+<body>
+    <div class="container">
+        <header class="page-header">
+            <h1>MEST EIT Management System</h1>
+        </header>
+        {{> loginButtons}}
+        <h2>Welcome to MEST EIT Management System</h2>
+        <div class="form well well-lg">
+            {{#if currentUser}}
+                <fieldset>
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label for="firstname" class="sr-only">First name:</label>
+                        <input class="form-control" type="text" name="firstname" placeholder="Enter First Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="surname" class="sr-only">Surname:</label>
+                        <input class="form-control" type="text" name="surname" placeholder="Enter Surname">
+                    </div>
+                    <div class="form-group"> 
+                            <label for="gender" class="sr-only">Gender:</label>  
+                        <label class="radio-inline"><input type="radio" name="gender" value="male" id="male">Male</label> 
+                        <label class="radio-inline"><input type="radio" name="gender" value="female" id="female">Female</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="dob" class="sr-only">Date of Birth:</label>
+                        <input class="form-control" type="date" name="dob">
+                    </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    
+                </form>
+            </fieldset>
+            {{/if}}
+           
+        </div>
+        <div class="eit-list">
+            <table >
+                <thead>
+                <tr>
+                    <th></th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Gender</th>
+                    <th>Date of Birth</th>
+                </tr>
+                </thead>
+                <tbody>
+                    {{#each eits}}
+                        {{> eit}}
+                    {{/each}}
+                </tbody>
+            </table>
+            <button id="delete" class="btn btn-primary">Delete</button>
+        </div>
+    </div>
+</body>
